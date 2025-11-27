@@ -3,6 +3,266 @@ line 1
 line 2
 line3
 line4
+<<<<<<< HEAD
 line for main
 line 5
 line 6
+=======
+this line for b2
+
+
+"""PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch> cd f1
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git init
+Initialized empty Git repository in C:/Users/SAVITA YADAV/OneDrive/Desktop/branch switch/f1/.git/
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git add .
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git commit -m "add"
+[master (root-commit) 867ca6f] add
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 demo.txt
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git remote add origin https://github.com/savitayadav1137-del/branch-switch.git
+>> git branch -M main
+>> git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 202 bytes | 202.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/savitayadav1137-del/branch-switch.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git add .
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git commit -m "added demo file"
+[main c7f62cb] added demo file
+ 1 file changed, 1 insertion(+)
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 249 bytes | 249.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/savitayadav1137-del/branch-switch.git
+   867ca6f..c7f62cb  main -> main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git branch
+* main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git branch b1
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git branch
+  b1
+* main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git checkout b1
+Switched to branch 'b1'
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git add .
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git commit -m "add line 2-4"
+[b1 79fc156] add line 2-4
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push
+fatal: The current branch b1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin b1
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push --set-upstream origin b1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 261 bytes | 261.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'b1' on GitHub by visiting:
+remote:      https://github.com/savitayadav1137-del/branch-switch/pull/new/b1
+remote:
+To https://github.com/savitayadav1137-del/branch-switch.git
+ * [new branch]      b1 -> b1
+branch 'b1' set up to track 'origin/b1'.
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git branch   
+* b1
+  main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git branch
+  b1
+* main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git add .
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git commit -m "added new lines"
+[main 154274e] added new lines
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 264 bytes | 264.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/savitayadav1137-del/branch-switch.git
+   c7f62cb..154274e  main -> main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git branch b2
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git branch
+  b1
+  b2
+* main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git checkout b2
+Switched to branch 'b2'
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git branch
+  b1
+* b2
+  main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git add .
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git commit -m "line for b2"
+[b2 89b7ac4] line for b2
+ 1 file changed, 1 insertion(+)
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push
+fatal: The current branch b2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin b2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push --set-upstream origin b2
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 275 bytes | 275.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'b2' on GitHub by visiting:
+remote:      https://github.com/savitayadav1137-del/branch-switch/pull/new/b2
+remote:
+To https://github.com/savitayadav1137-del/branch-switch.git
+ * [new branch]      b2 -> b2
+branch 'b2' set up to track 'origin/b2'.
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git branch
+  b1
+  b2
+* main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git add .
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git commit -m "line for main"
+[main 573043f] line for main
+ 1 file changed, 1 insertion(+)
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 270 bytes | 270.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/savitayadav1137-del/branch-switch.git
+   154274e..573043f  main -> main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git merge b1
+error: Your local changes to the following files would be overwritten by merge:
+        demo.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git add .
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git commit -m "add lines"
+[main 94723f3] add lines
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+        demo.txt
+Please commit your changes or stash them before you merge.
+Aborting
+Merge with strategy ort failed.
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git add .
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git commit -m "add lines"
+[main 94723f3] add lines
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git commit -m "add lines"
+[main 94723f3] add lines
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+[main 94723f3] add lines
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/savitayadav1137-del/branch-switch.git
+   573043f..94723f3  main -> main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git merge b1
+Auto-merging demo.txt
+CONFLICT (content): Merge conflict in demo.txt
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git config --global merge ff false
+error: key does not contain a section: merge
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   demo.txt
+
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git add .
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git commit -m "merge resolve"
+[main 085b32a] merge resolve
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 305 bytes | 305.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/savitayadav1137-del/branch-switch.git
+   94723f3..085b32a  main -> main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git branch 
+  b1
+  b2
+* main
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git checkout b1
+Switched to branch 'b1'
+Your branch is up to date with 'origin/b1'.
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git merge b2
+Auto-merging demo.txt
+CONFLICT (content): Merge conflict in demo.txt
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git add .
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git commit -m "merge"
+[b1 1babd47] merge
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/savitayadav1137-del/branch-switch.git
+   79fc156..1babd47  b1 -> b1
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> git status
+On branch b1
+Your branch is up to date with 'origin/b1'.
+
+nothing to commit, working tree clean
+PS C:\Users\SAVITA YADAV\OneDrive\Desktop\branch switch\f1> """  
+>>>>>>> b1
